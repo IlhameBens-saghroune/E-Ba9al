@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Articles">
+
+    <RelativeLayout
+        android:id="@+id/rlVar1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".Articles">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="174dp"
+            android:layout_height="189dp"
+            android:layout_gravity="top"
+            android:layout_marginEnd="-87dp"
+            android:layout_marginBottom="-13dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="207dp"
+            android:layout_height="276dp"
+            android:layout_alignEnd="@+id/img_logo"
+            android:layout_alignBottom="@+id/img_logo"
+            android:layout_marginEnd="-187dp"
+            android:layout_marginBottom="-147dp"
+            android:fontFamily="@font/jenine_bold_1"
+            android:gravity="center"
+            android:text="سلعة"
+            android:textAlignment="center"
+            android:textColor="#870040"
+            android:textSize="80dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="-177dp"
+            android:layout_toStartOf="@+id/textView"
+            android:src="@drawable/panier" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_logo"
+            android:layout_alignBottom="@+id/img_logo"
+            android:layout_marginEnd="-168dp"
+            android:layout_marginBottom="114dp"
+            android:onClick="backCredit"
+            android:src="@drawable/credit" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_logo"
+            android:layout_alignBottom="@+id/img_logo"
+            android:layout_marginEnd="-238dp"
+            android:layout_marginBottom="124dp"
+            android:onClick="backProfil"
+            android:src="@drawable/profil" />
+
+        <Button
+            android:id="@+id/boisson"
+            android:layout_width="269dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_logo"
+            android:layout_alignBottom="@+id/img_logo"
+            android:layout_marginEnd="-167dp"
+            android:layout_marginBottom="-168dp"
+            android:drawableLeft="@drawable/boisson"
+            android:fontFamily="@font/neosansarabic"
+            android:text="مشروبات"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/graines"
+            android:layout_width="263dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_logo"
+            android:layout_alignBottom="@+id/img_logo"
+            android:layout_marginEnd="-167dp"
+            android:layout_marginBottom="-260dp"
+            android:drawableLeft="@drawable/graines"
+            android:fontFamily="@font/neosansarabic"
+            android:text="قطنيات"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/laits"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_logo"
+            android:layout_alignBottom="@+id/img_logo"
+            android:layout_marginEnd="-167dp"
+            android:layout_marginBottom="-355dp"
+            android:drawableLeft="@drawable/laits"
+            android:fontFamily="@font/neosansarabic"
+            android:text="حليب و مشتقاته"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/hygiene"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_logo"
+            android:layout_alignBottom="@+id/img_logo"
+            android:layout_marginEnd="-167dp"
+            android:layout_marginBottom="-449dp"
+            android:drawableLeft="@drawable/hygiene"
+            android:fontFamily="@font/neosansarabic"
+            android:text="مواد التنظيف"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/cookies"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_logo"
+            android:layout_alignBottom="@+id/img_logo"
+            android:layout_marginEnd="-167dp"
+            android:layout_marginBottom="-548dp"
+            android:drawableLeft="@drawable/cookie"
+            android:fontFamily="@font/neosansarabic"
+            android:text="حلويات"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/autres"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_logo"
+            android:layout_alignBottom="@+id/img_logo"
+            android:layout_marginEnd="-167dp"
+            android:layout_marginBottom="-647dp"
+            android:drawableLeft="@drawable/autres"
+            android:fontFamily="@font/neosansarabic"
+            android:text="منتوجات اخرى"
+            android:textSize="25dp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

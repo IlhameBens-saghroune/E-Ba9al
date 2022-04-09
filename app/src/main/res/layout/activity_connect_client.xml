@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectClient">
+
+    <RelativeLayout
+        android:id="@+id/rlVar1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ConnectClient">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="362dp"
+            android:layout_height="507dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+            android:fontFamily="@font/jenine_bold_1"
+            android:gravity="center"
+            android:text="كليان"
+            android:textAlignment="center"
+            android:textColor="#870040"
+            android:textSize="80dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="174dp"
+            android:layout_height="189dp"
+            android:layout_gravity="top"
+            android:layout_marginBottom="30dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/password_login"
+            android:layout_width="351dp"
+            android:layout_height="86dp"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="-34dp"
+            android:elevation="3dp"
+            android:fontFamily="@font/neosansarabic"
+            android:padding="13dp"
+            android:text="كلمة السر "
+            android:textColor="#870040"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/nom_login"
+            android:layout_width="351dp"
+            android:layout_height="86dp"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="79dp"
+            android:elevation="3dp"
+            android:fontFamily="@font/neosansarabic"
+            android:padding="13dp"
+            android:text="الاسم "
+            android:textColor="#870040"
+            android:textSize="35dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="195dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/password_login"
+            android:layout_alignEnd="@+id/password_login"
+            android:layout_alignBottom="@+id/password_login"
+            android:layout_marginTop="98dp"
+            android:layout_marginEnd="69dp"
+            android:layout_marginBottom="-156dp"
+            android:background="@drawable/custom_button"
+            android:drawableLeft="@drawable/seconnecter"
+            android:fontFamily="@font/jenine_bold_1"
+            android:text="تكونيكطا"
+            android:textColor="#870040"
+            android:textSize="29dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="217dp"
+            android:layout_height="53dp"
+            android:layout_alignEnd="@+id/password_login"
+            android:layout_alignBottom="@+id/button"
+            android:layout_alignParentStart="true"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginStart="114dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="-97dp"
+            android:fontFamily="@font/jenine_bold_1"
+            android:gravity="center"
+            android:text="معندكش حساب ؟"
+            android:textSize="30dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="52dp"
+            android:layout_above="@+id/nom_login"
+            android:layout_alignStart="@+id/password_login"
+            android:layout_alignEnd="@+id/password_login"
+            android:layout_marginStart="113dp"
+            android:layout_marginEnd="73dp"
+            android:layout_marginBottom="-503dp"
+            android:fontFamily="@font/jenine_bold_1"
+            android:text="كليكي هنا !"
+            android:textColor="#DBC2A4"
+            android:clickable="true"
+            android:textSize="30dp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

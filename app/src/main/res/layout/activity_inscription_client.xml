@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InscriptionClient">
+
+    <RelativeLayout
+        android:id="@+id/rlVar1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ConnectClient">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="174dp"
+            android:layout_height="189dp"
+            android:layout_gravity="top"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="207dp"
+            android:layout_height="276dp"
+            android:layout_alignEnd="@+id/img_logo"
+            android:layout_alignBottom="@+id/img_logo"
+            android:layout_marginEnd="-149dp"
+            android:layout_marginBottom="-164dp"
+            android:fontFamily="@font/jenine_bold_1"
+            android:gravity="center"
+            android:text="كليان"
+            android:textAlignment="center"
+            android:textColor="#870040"
+            android:textSize="80dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/password_inscription"
+            android:layout_width="351dp"
+            android:layout_height="86dp"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginBottom="-357dp"
+            android:elevation="3dp"
+            android:fontFamily="@font/neosansarabic"
+            android:padding="13dp"
+            android:text="كلمة السر "
+            android:textColor="#870040"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/nom_inscription"
+            android:layout_width="351dp"
+            android:layout_height="86dp"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="-57dp"
+            android:elevation="3dp"
+            android:fontFamily="@font/neosansarabic"
+            android:padding="13dp"
+            android:text="الاسم "
+            android:textColor="#870040"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/CIN"
+            android:layout_width="351dp"
+            android:layout_height="86dp"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="-155dp"
+            android:elevation="3dp"
+            android:fontFamily="@font/neosansarabic"
+            android:padding="13dp"
+            android:text="ر.ب.و "
+            android:textColor="#870040"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/GSM"
+            android:layout_width="351dp"
+            android:layout_height="86dp"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="-256dp"
+            android:elevation="3dp"
+            android:fontFamily="@font/neosansarabic"
+            android:padding="13dp"
+            android:text="رقم الهاتف"
+            android:textColor="#870040"
+            android:textSize="35dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="262dp"
+            android:layout_height="68dp"
+            android:layout_alignEnd="@+id/password_inscription"
+            android:layout_alignBottom="@+id/password_inscription"
+            android:layout_marginTop="-260dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="-118dp"
+            android:background="@drawable/custom_button"
+            android:drawableLeft="@drawable/ajout"
+            android:fontFamily="@font/jenine_bold_1"
+            android:text="تسجل"
+            android:textColor="#870040"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

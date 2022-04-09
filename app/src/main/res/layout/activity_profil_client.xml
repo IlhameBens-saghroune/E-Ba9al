@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilClient">
+
+    <RelativeLayout
+        android:id="@+id/rlVar1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ConnectClient">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/CIN_profil"
+            android:layout_marginBottom="-180dp"
+            android:src="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/CIN_profil"
+            android:layout_marginBottom="-283dp"
+            android:src="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/CIN_profil"
+            android:layout_marginBottom="-71dp"
+            android:src="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="174dp"
+            android:layout_height="189dp"
+            android:layout_gravity="top"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="207dp"
+            android:layout_height="276dp"
+            android:layout_alignEnd="@+id/img_logo"
+            android:layout_alignBottom="@+id/img_logo"
+            android:layout_marginEnd="-136dp"
+            android:layout_marginBottom="-155dp"
+            android:fontFamily="@font/jenine_bold_1"
+            android:gravity="center"
+            android:text="بروفايل"
+            android:textAlignment="center"
+            android:textColor="#870040"
+            android:textSize="80dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_logo"
+            android:layout_alignBottom="@+id/img_logo"
+            android:layout_marginEnd="-159dp"
+            android:layout_marginBottom="124dp"
+            android:src="@drawable/credit"
+            android:onClick="backCredit"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_logo"
+            android:layout_alignBottom="@+id/img_logo"
+            android:layout_marginEnd="-238dp"
+            android:layout_marginBottom="124dp"
+            android:src="@drawable/articles"
+            android:onClick="backArticles"/>
+
+        <EditText
+            android:id="@+id/password_profil"
+            android:layout_width="351dp"
+            android:layout_height="86dp"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="-353dp"
+            android:elevation="3dp"
+            android:fontFamily="@font/neosansarabic"
+            android:padding="13dp"
+            android:text="كلمة السر "
+            android:textColor="#870040"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/nom_profil"
+            android:layout_width="351dp"
+            android:layout_height="86dp"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="-33dp"
+            android:elevation="3dp"
+            android:fontFamily="@font/neosansarabic"
+            android:padding="13dp"
+            android:text="الاسم "
+            android:textColor="#870040"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/CIN_profil"
+            android:layout_width="351dp"
+            android:layout_height="86dp"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="-146dp"
+            android:elevation="3dp"
+            android:fontFamily="@font/neosansarabic"
+            android:padding="13dp"
+            android:text="ر.ب.و "
+            android:textColor="#870040"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/GSM_profil"
+            android:layout_width="351dp"
+            android:layout_height="86dp"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="-249dp"
+            android:elevation="3dp"
+            android:fontFamily="@font/neosansarabic"
+            android:padding="13dp"
+            android:text="رقم الهاتف"
+            android:textColor="#870040"
+            android:textSize="35dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/CIN_profil"
+            android:layout_marginBottom="35dp"
+            android:src="@drawable/edit" />
+
+        <TextView
+            android:layout_width="347dp"
+            android:layout_height="67dp"
+            android:layout_alignEnd="@+id/img_logo"
+            android:layout_alignBottom="@+id/img_logo"
+            android:layout_marginEnd="-219dp"
+            android:layout_marginBottom="-604dp"
+            android:fontFamily="@font/jenine_bold_1"
+            android:gravity="center"
+            android:text="بغيتي تحايد الحساب ديالك؟"
+            android:textColor="#870040"
+            android:textSize="30dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="145dp"
+            android:layout_height="56dp"
+            android:layout_alignEnd="@+id/imageView3"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_marginEnd="-244dp"
+            android:layout_marginBottom="-163dp"
+            android:clickable="true"
+            android:text="من هنا !"
+            android:textColor="#DBC2A4"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:fontFamily="@font/jenine_bold_1"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
